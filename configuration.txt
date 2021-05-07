@@ -1,0 +1,6 @@
+protocolFileDirectory = E:\eclipse-workspace11\MDEGen\protocols
+javaIDEProjectDirectory = E:\eclipse-workspace11\MDEGen\
+database(Yes/No) = No  
+databaseURL = jdbc:mysql://localhost:3306
+databaseUser = root
+databasePassword = 

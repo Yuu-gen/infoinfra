@@ -253,7 +253,7 @@
       <node concept="3_Gd5r" id="4rqLd8XDigQ" role="3_Gd4E">
         <property role="3_Gd5q" value="changeStartState" />
         <property role="3_Gd5o" value="changeStartState" />
-        <property role="3_Gd5t" value="Ändert" />
+        <property role="3_Gd5t" value="aendert " />
         <node concept="3_Gf45" id="4rqLd8XDih8" role="3_Gf4o">
           <property role="TrG5h" value="z0" />
           <node concept="BxOjD" id="4rqLd8XDihc" role="BBx2O">

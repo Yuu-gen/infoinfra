@@ -253,7 +253,7 @@
       <node concept="3_Gd5r" id="4rqLd8XDigQ" role="3_Gd4E">
         <property role="3_Gd5q" value="changeStartState" />
         <property role="3_Gd5o" value="changeStartState" />
-        <property role="3_Gd5t" value="aendert " />
+        <property role="3_Gd5t" value="Aendert den Startzustand zu dem Zustand z0." />
         <node concept="3_Gf45" id="4rqLd8XDih8" role="3_Gf4o">
           <property role="TrG5h" value="z0" />
           <node concept="BxOjD" id="4rqLd8XDihc" role="BBx2O">
@@ -264,7 +264,7 @@
       <node concept="3_Gd5r" id="4rqLd8XDhZu" role="3_Gd4E">
         <property role="3_Gd5q" value="addState" />
         <property role="3_Gd5o" value="addState" />
-        <property role="3_Gd5t" value="Fuegt einen Zustand mit Namen name hinzu, der Endzustand ist, sofern isFinal = true" />
+        <property role="3_Gd5t" value="Fuegt einen Zustand mit Namen name hinzu, der Endzustand ist, sofern isFinal = true." />
         <node concept="3_Gf45" id="4rqLd8XDhZ$" role="3_Gf4o">
           <property role="TrG5h" value="name" />
           <node concept="BxOjD" id="4rqLd8XDhZC" role="BBx2O">

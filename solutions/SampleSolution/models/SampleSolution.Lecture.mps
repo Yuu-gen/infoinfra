@@ -325,8 +325,14 @@
       <property role="3_Gd5o" value="initialise" />
       <property role="3_Gd5t" value="Inititialisiert einen Automaten" />
       <node concept="3_Gf45" id="73qKrKUOsV5" role="3_Gf4o">
-        <property role="TrG5h" value="startStateName" />
-        <node concept="BxOjD" id="73qKrKUOsV9" role="BBx2O">
+        <property role="TrG5h" value="startState" />
+        <node concept="BxOjD" id="5EzMHhZf3lu" role="BBx2O">
+          <ref role="BxOjI" node="4rqLd8XDi0j" resolve="State" />
+        </node>
+      </node>
+      <node concept="3_Gf45" id="5EzMHhZf3lc" role="3_Gf4o">
+        <property role="TrG5h" value="smName" />
+        <node concept="BxOjD" id="5EzMHhZf3lx" role="BBx2O">
           <ref role="BxOjI" node="5H4ykBYMXjQ" resolve="String" />
         </node>
       </node>

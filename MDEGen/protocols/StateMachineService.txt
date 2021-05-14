@@ -1,5 +1,5 @@
 
-STARTING JAVA AST CREATION @ Fri May 14 10:21:48 CEST 2021
+STARTING JAVA AST CREATION @ Fri May 14 10:30:26 CEST 2021
 Start Transforming StateMachineService
 Information: --> Starting Transformation Phase 1
 Start Transforming Transition
@@ -193,7 +193,7 @@ Information: Transforming value validate of property techName
 Information: Construction of constructor-parameter-value for readableName:java.lang.String
 Information: Transforming value validate of property readableName
 Information: Construction of constructor-parameter-value for documentation:java.lang.String
-Information: Transforming value Validiert ob, das Wort w von diesem Automaten erkannt wird of property documentation
+Information: Transforming value Validiert ob, das Wort w von diesem Automaten erkannt wird. Test! of property documentation
 Information: Construction of constructor-parameter-value for abstrakt:java.lang.Boolean
 Information: Transforming value null of property abstrakt
 Information: Construction of constructor-parameter-value for returnType:metaModel.JTypeAdapter
@@ -514,6 +514,6 @@ Information: Construction of constructor-parameter-value for isMany:java.lang.Bo
 Information: Transforming value null of property isMany
 Information: --> Starting Transformation Phase 2 
 Information: --> Finished Transformation Phase 2 (assigning all unassigned references) with no Errors.
-Information: Successfully Finished Java AST Creation @ Fri May 14 10:21:48 CEST 2021
+Information: Successfully Finished Java AST Creation @ Fri May 14 10:30:26 CEST 2021
 Information: Carried out Code Generation for StateMachineService. Watch out for Syntax Errors in Generated Code!!!
-Information: Created XML File at E:\eclipse-workspace11\MDEGen\protocols\ASTStateMachineService.xml
+Information: Created XML File at E:\git\MPS_Projects\MDEGen\protocols\ASTStateMachineService.xml

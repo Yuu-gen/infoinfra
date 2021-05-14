@@ -18,6 +18,8 @@ import generated.stateMachineService.proxies.*;
 import db.executer.PersistenceException;
 import java.util.Set;
 import java.util.HashSet;
+import java.util.Optional;
+
 import exceptions.ConstraintViolation;
 //20 ===== Editable : Your Import Section =========
 
@@ -123,29 +125,50 @@ public class StateMachine extends Observable implements java.io.Serializable, IS
  * Aendert den Startzustand zu dem Zustand z0.
  */
    public void changeStartState(State z0){
-      // TODO: Implement Operation changeStartState
-      return;
+      this.setStartState(z0);
    }
 /**
  * Fuegt einen Zustand mit Namen name hinzu, der Endzustand ist, sofern isFinal = true.
  */
    public void addState(String name, Boolean isFinal){
-      // TODO: Implement Operation addState
-      return;
+      this.addToStates(State.createFresh(Optional.of(name), isFinal));
    }
 /**
  * Validiert ob, das Wort w von diesem Automaten erkannt wird. Test!
  */
    public Boolean validate(String w){
-      // TODO: Implement Operation validate
-      return null;
+	   State currentState = this.getStartState();
+	   String currentWord = w;
+	  while(!w.isEmpty()) {
+		  Optional<State> next = this.delta(currentState, Event.createFresh(currentWord.substring(0,1)));
+		  if(next.isPresent()) currentState = next.get();
+		  else				 	return false;
+		  currentWord = currentWord.substring(1);
+	  }
+      return currentState.getIsFinal();
    }
+   
+   private Optional<State> delta(State z, Event e){
+	   for (Transition currentTransition : this.getTransitions()) {
+		   if(currentTransition.getFrom().equals(z)&&currentTransition.getEvent().getLabel().equals(e.getLabel())) return Optional.of(currentTransition.getTo());
+	   }
+	   return Optional.empty();
+   }
+   
+   
 /**
  * Fuegt eine Transition mit Zustand "for", Zustand "to" und Event "event" hinzu.
  */
    public void addTransition(State from, State to, Event event){
-      // TODO: Implement Operation addTransition
-      return;
+      try {
+		this.addToTransitions(Transition.createFresh(from, to, event, this));
+	} catch (PersistenceException e) {
+		// TODO Auto-generated catch block
+		System.out.println("Fehler: Persistenz ist fehlerhaft:" + e.getMessage());
+	} catch (ConstraintViolation e) {
+		// TODO Auto-generated catch block
+		System.out.println("Fehler: Transition ist bereits in anderer SM enthalten:" + e.getMessage());
+   }
    }
 //90 ===== GENERATED: End of Your Operations ======
 }

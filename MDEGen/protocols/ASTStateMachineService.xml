@@ -56,6 +56,28 @@
       </attributes>
       <operations>
         <metaModel.JOperation>
+          <techName>changeStartState</techName>
+          <readableName>changeStartState</readableName>
+          <documentation>Aendert den Startzustand zu dem Zustand z0.</documentation>
+          <abstrakt>false</abstrakt>
+          <formalParameters>
+            <metaModel.JParameter>
+              <name>z0</name>
+              <type>
+                <type class="metaModel.JClassLink">
+                  <name>State</name>
+                  <state class="metaModel.JClassLinkStateLocallyAssigned">
+                    <target reference="../../../../../../../../../metaModel.JClass[3]"/>
+                  </state>
+                </type>
+                <isMany>false</isMany>
+              </type>
+            </metaModel.JParameter>
+          </formalParameters>
+          <returnType/>
+          <exception reference="../returnType"/>
+        </metaModel.JOperation>
+        <metaModel.JOperation>
           <techName>addState</techName>
           <readableName>addState</readableName>
           <documentation>Fuegt einen Zustand mit Namen name hinzu, der Endzustand ist, sofern isFinal = true.</documentation>
@@ -76,8 +98,30 @@
               </type>
             </metaModel.JParameter>
           </formalParameters>
-          <returnType/>
-          <exception reference="../returnType"/>
+          <returnType reference="../../metaModel.JOperation/returnType"/>
+          <exception reference="../../metaModel.JOperation/returnType"/>
+        </metaModel.JOperation>
+        <metaModel.JOperation>
+          <techName>validate</techName>
+          <readableName>validate</readableName>
+          <documentation>Validiert ob, das Wort w von diesem Automaten erkannt wird. Test!</documentation>
+          <abstrakt>false</abstrakt>
+          <formalParameters>
+            <metaModel.JParameter>
+              <name>w</name>
+              <type>
+                <type class="metaModel.primitives.JString" reference="../../../../../../../metaModel.JClass[2]/attributes/metaModel.JAttributeConnector/targetType"/>
+                <isMany>false</isMany>
+              </type>
+            </metaModel.JParameter>
+          </formalParameters>
+          <returnType>
+            <value class="metaModel.JTypeAdapter">
+              <type class="metaModel.primitives.JBoolean" reference="../../../../../../metaModel.JClass[3]/attributes/metaModel.JAttributeConnector[2]/targetType"/>
+              <isMany>false</isMany>
+            </value>
+          </returnType>
+          <exception reference="../../metaModel.JOperation/returnType"/>
         </metaModel.JOperation>
         <metaModel.JOperation>
           <techName>addTransition</techName>
@@ -116,50 +160,6 @@
                   <name>Event</name>
                   <state class="metaModel.JClassLinkStateLocallyAssigned">
                     <target reference="../../../../../../../../../metaModel.JClass[2]"/>
-                  </state>
-                </type>
-                <isMany>false</isMany>
-              </type>
-            </metaModel.JParameter>
-          </formalParameters>
-          <returnType reference="../../metaModel.JOperation/returnType"/>
-          <exception reference="../../metaModel.JOperation/returnType"/>
-        </metaModel.JOperation>
-        <metaModel.JOperation>
-          <techName>validate</techName>
-          <readableName>validate</readableName>
-          <documentation>Validiert ob, das Wort w von diesem Automaten erkannt wird</documentation>
-          <abstrakt>false</abstrakt>
-          <formalParameters>
-            <metaModel.JParameter>
-              <name>w</name>
-              <type>
-                <type class="metaModel.primitives.JString" reference="../../../../../../../metaModel.JClass[2]/attributes/metaModel.JAttributeConnector/targetType"/>
-                <isMany>false</isMany>
-              </type>
-            </metaModel.JParameter>
-          </formalParameters>
-          <returnType>
-            <value class="metaModel.JTypeAdapter">
-              <type class="metaModel.primitives.JBoolean" reference="../../../../../../metaModel.JClass[3]/attributes/metaModel.JAttributeConnector[2]/targetType"/>
-              <isMany>false</isMany>
-            </value>
-          </returnType>
-          <exception reference="../../metaModel.JOperation/returnType"/>
-        </metaModel.JOperation>
-        <metaModel.JOperation>
-          <techName>changeStartState</techName>
-          <readableName>changeStartState</readableName>
-          <documentation>Aendert den Startzustand zu dem Zustand z0.</documentation>
-          <abstrakt>false</abstrakt>
-          <formalParameters>
-            <metaModel.JParameter>
-              <name>z0</name>
-              <type>
-                <type class="metaModel.JClassLink">
-                  <name>State</name>
-                  <state class="metaModel.JClassLinkStateLocallyAssigned">
-                    <target reference="../../../../../../../../../metaModel.JClass[3]"/>
                   </state>
                 </type>
                 <isMany>false</isMany>

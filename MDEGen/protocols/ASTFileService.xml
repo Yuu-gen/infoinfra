@@ -1,0 +1,159 @@
+<JService>
+  <name>FileService</name>
+  <relationTypes class="list">
+    <metaModel.JClass>
+      <name>Element</name>
+      <singleton>false</singleton>
+      <attributes>
+        <metaModel.JAttributeConnector>
+          <role>name</role>
+          <targetType class="metaModel.primitives.JString" defined-in="metaModel.JTargetConnector">
+            <name>String</name>
+          </targetType>
+          <constraint class="metaModel.enumerations.JPartialMap"/>
+          <targetType class="metaModel.primitives.JString" reference="../targetType"/>
+        </metaModel.JAttributeConnector>
+      </attributes>
+      <operations>
+        <metaModel.JOperation>
+          <techName>contains</techName>
+          <readableName>contains</readableName>
+          <documentation>Prueft, ob element direkt oder indirekt in this enthalten ist oder ob element==this ist</documentation>
+          <abstrakt>true</abstrakt>
+          <formalParameters>
+            <metaModel.JParameter>
+              <name>element</name>
+              <type>
+                <type class="metaModel.JClassLink">
+                  <name>Element</name>
+                  <state class="metaModel.JClassLinkStateLocallyAssigned">
+                    <target reference="../../../../../../../.."/>
+                  </state>
+                </type>
+                <isMany>false</isMany>
+              </type>
+            </metaModel.JParameter>
+          </formalParameters>
+          <returnType>
+            <value class="metaModel.JTypeAdapter">
+              <type class="metaModel.primitives.JBoolean">
+                <name>Boolean</name>
+              </type>
+              <isMany>false</isMany>
+            </value>
+          </returnType>
+          <exception/>
+        </metaModel.JOperation>
+      </operations>
+    </metaModel.JClass>
+    <metaModel.JClass>
+      <name>Directory</name>
+      <singleton>false</singleton>
+      <attributes/>
+      <operations>
+        <metaModel.JOperation>
+          <techName>addElement</techName>
+          <readableName>addElement</readableName>
+          <documentation>Fuegt element zu this hinzu, wenn element nicht this enthält und element ungleich this ist. Im anderen Fall wird CycleException geworfen</documentation>
+          <abstrakt>false</abstrakt>
+          <formalParameters>
+            <metaModel.JParameter>
+              <name>element</name>
+              <type>
+                <type class="metaModel.JClassLink">
+                  <name>Element</name>
+                  <state class="metaModel.JClassLinkStateLocallyAssigned">
+                    <target reference="../../../../../../../../../metaModel.JClass"/>
+                  </state>
+                </type>
+                <isMany>false</isMany>
+              </type>
+            </metaModel.JParameter>
+          </formalParameters>
+          <returnType reference="../../../../metaModel.JClass/operations/metaModel.JOperation/exception"/>
+          <exception>
+            <value class="metaModel.JException">
+              <name>CycleException</name>
+              <errorText>Cycle detected</errorText>
+            </value>
+          </exception>
+        </metaModel.JOperation>
+      </operations>
+    </metaModel.JClass>
+    <metaModel.JClass>
+      <name>File</name>
+      <singleton>false</singleton>
+      <attributes>
+        <metaModel.JAttributeConnector>
+          <role>size</role>
+          <targetType class="metaModel.primitives.JRational" defined-in="metaModel.JTargetConnector">
+            <name>Rational</name>
+          </targetType>
+          <constraint class="metaModel.enumerations.JTotalMap"/>
+          <targetType class="metaModel.primitives.JRational" reference="../targetType"/>
+        </metaModel.JAttributeConnector>
+      </attributes>
+      <operations/>
+    </metaModel.JClass>
+    <metaModel.JAssociation>
+      <name>Dir_Has_Elements</name>
+      <owner class="metaModel.JBidirectional">
+        <connector>
+          <role>container</role>
+          <ownerType>
+            <name>Directory</name>
+            <state class="metaModel.JClassLinkStateLocallyAssigned">
+              <target reference="../../../../../../metaModel.JClass[2]"/>
+            </state>
+          </ownerType>
+        </connector>
+        <domainEndSpecification class="metaModel.enumerations.JInjective"/>
+      </owner>
+      <target class="metaModel.JConstrainedTargetConnector">
+        <role>elements</role>
+        <targetType class="metaModel.JClassLink">
+          <name>Element</name>
+          <state class="metaModel.JClassLinkStateLocallyAssigned">
+            <target reference="../../../../../metaModel.JClass"/>
+          </state>
+        </targetType>
+        <constraint class="metaModel.enumerations.JList"/>
+      </target>
+      <derived>false</derived>
+    </metaModel.JAssociation>
+  </relationTypes>
+  <generalisations class="set">
+    <metaModel.JGeneralisation>
+      <general>
+        <name>Element</name>
+        <state class="metaModel.JClassLinkStateLocallyAssigned">
+          <target reference="../../../../../relationTypes/metaModel.JClass"/>
+        </state>
+      </general>
+      <specific>
+        <name>File</name>
+        <state class="metaModel.JClassLinkStateLocallyAssigned">
+          <target reference="../../../../../relationTypes/metaModel.JClass[3]"/>
+        </state>
+      </specific>
+    </metaModel.JGeneralisation>
+    <metaModel.JGeneralisation>
+      <general>
+        <name>Element</name>
+        <state class="metaModel.JClassLinkStateLocallyAssigned">
+          <target reference="../../../../../relationTypes/metaModel.JClass"/>
+        </state>
+      </general>
+      <specific>
+        <name>Directory</name>
+        <state class="metaModel.JClassLinkStateLocallyAssigned">
+          <target reference="../../../../../relationTypes/metaModel.JClass[2]"/>
+        </state>
+      </specific>
+    </metaModel.JGeneralisation>
+  </generalisations>
+  <operations class="set"/>
+  <exceptions class="set">
+    <metaModel.JException reference="../../relationTypes/metaModel.JClass[2]/operations/metaModel.JOperation/exception/value"/>
+  </exceptions>
+</JService>

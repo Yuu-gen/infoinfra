@@ -1,0 +1,185 @@
+
+STARTING JAVA AST CREATION @ Fri May 07 10:33:44 CEST 2021
+Start Transforming FileServiceWithContainment
+Information: --> Starting Transformation Phase 1
+Start Transforming Container
+Information: Construction of constructor-parameter-value for name:java.lang.String
+Information: Transforming value Container of property name
+Information: Construction of constructor-parameter-value for singleton:java.lang.Boolean
+Information: Transforming value null of property singleton
+Information: Adding children according to addAttribute(Feature attributes) in Java Class class metaModel.JClass
+Information: Adding children according to addOperation(Feature operations) in Java Class class metaModel.JClass
+Start Transforming Containee
+Information: Construction of constructor-parameter-value for name:java.lang.String
+Information: Transforming value Containee of property name
+Information: Construction of constructor-parameter-value for singleton:java.lang.Boolean
+Information: Transforming value null of property singleton
+Information: Adding children according to addAttribute(Feature attributes) in Java Class class metaModel.JClass
+Information: Adding children according to addOperation(Feature operations) in Java Class class metaModel.JClass
+Start Transforming Root
+Information: Construction of constructor-parameter-value for name:java.lang.String
+Information: Transforming value Root of property name
+Information: Construction of constructor-parameter-value for singleton:java.lang.Boolean
+Information: Transforming value null of property singleton
+Information: Adding children according to addAttribute(Feature attributes) in Java Class class metaModel.JClass
+Information: Adding children according to addOperation(Feature operations) in Java Class class metaModel.JClass
+Start Transforming Directory
+Information: Construction of constructor-parameter-value for name:java.lang.String
+Information: Transforming value Directory of property name
+Information: Construction of constructor-parameter-value for singleton:java.lang.Boolean
+Information: Transforming value null of property singleton
+Information: Adding children according to addAttribute(Feature attributes) in Java Class class metaModel.JClass
+Information: Adding children according to addOperation(Feature operations) in Java Class class metaModel.JClass
+Start Transforming File
+Information: Construction of constructor-parameter-value for name:java.lang.String
+Information: Transforming value File of property name
+Information: Construction of constructor-parameter-value for singleton:java.lang.Boolean
+Information: Transforming value null of property singleton
+Information: Adding children according to addAttribute(Feature attributes) in Java Class class metaModel.JClass
+Information: Adding children according to addOperation(Feature operations) in Java Class class metaModel.JClass
+Start Transforming CerToCee
+Information: Construction of constructor-parameter-value for name:java.lang.String
+Information: Transforming value CerToCee of property name
+Information: Construction of constructor-parameter-value for derived:java.lang.Boolean
+Information: Transforming value null of property derived
+Information: Construction of constructor-parameter-value for owner:metaModel.JManagement
+Start Transforming Bidirectional
+Information: Construction of constructor-parameter-value for connector:metaModel.JOwnerConnector
+Start Transforming OwnerConnector
+Information: Construction of constructor-parameter-value for role:java.lang.String
+Information: Transforming value containedIn of property role
+Information: Construction of constructor-parameter-value for ownerType:metaModel.JClassLink
+Information: Fetching already created Java Node for referenced node Container of concept Class
+Information: Searching for method getClass
+Information: Not found! Try getType
+Information: Searching for method getType
+Information: Not found! Try getX with X the implemented interface
+Information: Searching for method getRelationType
+Information: Invoking method public metaModel.JRelationType metaModel.JService.getRelationType(java.lang.String) throws javaASTTraversals.MDEException with actual parameter: Container
+Information: Creating JClassLink-Instance to JClass Container
+Information: Construction of constructor-parameter-value for domainEndSpecification:metaModel.enumerations.JFunctionProperty
+Information: Transforming value 1axOPyL0tmr/Containment of property domainEndSpecification
+Information: Retrieving enumeration value of type JContainment for property domainEndSpecification
+Information: Construction of constructor-parameter-value for target:metaModel.JTargetConnector
+Start Transforming ConstrainedTargetConnector
+Information: Construction of constructor-parameter-value for role:java.lang.String
+Information: Transforming value contents of property role
+Information: Construction of constructor-parameter-value for targetType:metaModel.JRelationType
+Information: Fetching already created Java Node for referenced node Containee of concept Class
+Information: Searching for method getClass
+Information: Not found! Try getType
+Information: Searching for method getType
+Information: Not found! Try getX with X the implemented interface
+Information: Searching for method getRelationType
+Information: Invoking method public metaModel.JRelationType metaModel.JService.getRelationType(java.lang.String) throws javaASTTraversals.MDEException with actual parameter: Containee
+Information: Creating JClassLink-Instance to JClass Containee
+Information: Construction of constructor-parameter-value for constraint:metaModel.enumerations.JMultiplicity
+Information: Transforming value 1axOPyL0vaw/Set of property constraint
+Information: Retrieving enumeration value of type JSet for property constraint
+Start Transforming RootToCer
+Information: Construction of constructor-parameter-value for name:java.lang.String
+Information: Transforming value RootToCer of property name
+Information: Construction of constructor-parameter-value for derived:java.lang.Boolean
+Information: Transforming value null of property derived
+Information: Construction of constructor-parameter-value for owner:metaModel.JManagement
+Start Transforming Unidirectional
+Information: Construction of constructor-parameter-value for ownerType:metaModel.JClassLink
+Information: Fetching already created Java Node for referenced node Root of concept Class
+Information: Searching for method getClass
+Information: Not found! Try getType
+Information: Searching for method getType
+Information: Not found! Try getX with X the implemented interface
+Information: Searching for method getRelationType
+Information: Invoking method public metaModel.JRelationType metaModel.JService.getRelationType(java.lang.String) throws javaASTTraversals.MDEException with actual parameter: Root
+Information: Creating JClassLink-Instance to JClass Root
+Information: Construction of constructor-parameter-value for target:metaModel.JTargetConnector
+Start Transforming ConstrainedTargetConnector
+Information: Construction of constructor-parameter-value for role:java.lang.String
+Information: Transforming value container of property role
+Information: Construction of constructor-parameter-value for targetType:metaModel.JRelationType
+Information: Fetching already created Java Node for referenced node Container of concept Class
+Information: Searching for method getClass
+Information: Not found! Try getType
+Information: Searching for method getType
+Information: Not found! Try getX with X the implemented interface
+Information: Searching for method getRelationType
+Information: Invoking method public metaModel.JRelationType metaModel.JService.getRelationType(java.lang.String) throws javaASTTraversals.MDEException with actual parameter: Container
+Information: Creating JClassLink-Instance to JClass Container
+Information: Construction of constructor-parameter-value for constraint:metaModel.enumerations.JMultiplicity
+Information: Transforming value 1axOPyL0vap/TotalMap of property constraint
+Information: Retrieving enumeration value of type JTotalMap for property constraint
+Start Transforming DirToCer
+Information: Construction of constructor-parameter-value for name:java.lang.String
+Information: Transforming value DirToCer of property name
+Information: Construction of constructor-parameter-value for derived:java.lang.Boolean
+Information: Transforming value null of property derived
+Information: Construction of constructor-parameter-value for owner:metaModel.JManagement
+Start Transforming Unidirectional
+Information: Construction of constructor-parameter-value for ownerType:metaModel.JClassLink
+Information: Fetching already created Java Node for referenced node Directory of concept Class
+Information: Searching for method getClass
+Information: Not found! Try getType
+Information: Searching for method getType
+Information: Not found! Try getX with X the implemented interface
+Information: Searching for method getRelationType
+Information: Invoking method public metaModel.JRelationType metaModel.JService.getRelationType(java.lang.String) throws javaASTTraversals.MDEException with actual parameter: Directory
+Information: Creating JClassLink-Instance to JClass Directory
+Information: Construction of constructor-parameter-value for target:metaModel.JTargetConnector
+Start Transforming ConstrainedTargetConnector
+Information: Construction of constructor-parameter-value for role:java.lang.String
+Information: Transforming value container of property role
+Information: Construction of constructor-parameter-value for targetType:metaModel.JRelationType
+Information: Fetching already created Java Node for referenced node Container of concept Class
+Information: Searching for method getClass
+Information: Not found! Try getType
+Information: Searching for method getType
+Information: Not found! Try getX with X the implemented interface
+Information: Searching for method getRelationType
+Information: Invoking method public metaModel.JRelationType metaModel.JService.getRelationType(java.lang.String) throws javaASTTraversals.MDEException with actual parameter: Container
+Information: Creating JClassLink-Instance to JClass Container
+Information: Construction of constructor-parameter-value for constraint:metaModel.enumerations.JMultiplicity
+Information: Transforming value 1axOPyL0vap/TotalMap of property constraint
+Information: Retrieving enumeration value of type JTotalMap for property constraint
+Start Transforming Generalisation
+Information: Construction of constructor-parameter-value for general:metaModel.JClassLink
+Information: Fetching already created Java Node for referenced node Containee of concept Class
+Information: Searching for method getClass
+Information: Not found! Try getType
+Information: Searching for method getType
+Information: Not found! Try getX with X the implemented interface
+Information: Searching for method getRelationType
+Information: Invoking method public metaModel.JRelationType metaModel.JService.getRelationType(java.lang.String) throws javaASTTraversals.MDEException with actual parameter: Containee
+Information: Creating JClassLink-Instance to JClass Containee
+Information: Construction of constructor-parameter-value for specific:metaModel.JClassLink
+Information: Fetching already created Java Node for referenced node Directory of concept Class
+Information: Searching for method getClass
+Information: Not found! Try getType
+Information: Searching for method getType
+Information: Not found! Try getX with X the implemented interface
+Information: Searching for method getRelationType
+Information: Invoking method public metaModel.JRelationType metaModel.JService.getRelationType(java.lang.String) throws javaASTTraversals.MDEException with actual parameter: Directory
+Information: Creating JClassLink-Instance to JClass Directory
+Start Transforming Generalisation
+Information: Construction of constructor-parameter-value for general:metaModel.JClassLink
+Information: Fetching already created Java Node for referenced node Containee of concept Class
+Information: Searching for method getClass
+Information: Not found! Try getType
+Information: Searching for method getType
+Information: Not found! Try getX with X the implemented interface
+Information: Searching for method getRelationType
+Information: Invoking method public metaModel.JRelationType metaModel.JService.getRelationType(java.lang.String) throws javaASTTraversals.MDEException with actual parameter: Containee
+Information: Creating JClassLink-Instance to JClass Containee
+Information: Construction of constructor-parameter-value for specific:metaModel.JClassLink
+Information: Fetching already created Java Node for referenced node File of concept Class
+Information: Searching for method getClass
+Information: Not found! Try getType
+Information: Searching for method getType
+Information: Not found! Try getX with X the implemented interface
+Information: Searching for method getRelationType
+Information: Invoking method public metaModel.JRelationType metaModel.JService.getRelationType(java.lang.String) throws javaASTTraversals.MDEException with actual parameter: File
+Information: Creating JClassLink-Instance to JClass File
+Information: --> Starting Transformation Phase 2 
+Information: --> Finished Transformation Phase 2 (assigning all unassigned references) with no Errors.
+Information: Successfully Finished Java AST Creation @ Fri May 07 10:33:44 CEST 2021
+Information: Carried out Code Generation for FileServiceWithContainment. Watch out for Syntax Errors in Generated Code!!!
+Information: Created XML File at E:\eclipse-workspace11\MDEGen\protocols\ASTFileServiceWithContainment.xml

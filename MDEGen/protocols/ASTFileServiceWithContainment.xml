@@ -1,0 +1,137 @@
+<JService>
+  <name>FileServiceWithContainment</name>
+  <relationTypes class="list">
+    <metaModel.JClass>
+      <name>Container</name>
+      <singleton>false</singleton>
+      <attributes/>
+      <operations/>
+    </metaModel.JClass>
+    <metaModel.JClass>
+      <name>Containee</name>
+      <singleton>false</singleton>
+      <attributes/>
+      <operations/>
+    </metaModel.JClass>
+    <metaModel.JClass>
+      <name>Root</name>
+      <singleton>false</singleton>
+      <attributes/>
+      <operations/>
+    </metaModel.JClass>
+    <metaModel.JClass>
+      <name>Directory</name>
+      <singleton>false</singleton>
+      <attributes/>
+      <operations/>
+    </metaModel.JClass>
+    <metaModel.JClass>
+      <name>File</name>
+      <singleton>false</singleton>
+      <attributes/>
+      <operations/>
+    </metaModel.JClass>
+    <metaModel.JAssociation>
+      <name>CerToCee</name>
+      <owner class="metaModel.JBidirectional">
+        <connector>
+          <role>containedIn</role>
+          <ownerType>
+            <name>Container</name>
+            <state class="metaModel.JClassLinkStateLocallyAssigned">
+              <target reference="../../../../../../metaModel.JClass"/>
+            </state>
+          </ownerType>
+        </connector>
+        <domainEndSpecification class="metaModel.enumerations.JContainment"/>
+      </owner>
+      <target class="metaModel.JConstrainedTargetConnector">
+        <role>contents</role>
+        <targetType class="metaModel.JClassLink">
+          <name>Containee</name>
+          <state class="metaModel.JClassLinkStateLocallyAssigned">
+            <target reference="../../../../../metaModel.JClass[2]"/>
+          </state>
+        </targetType>
+        <constraint class="metaModel.enumerations.JSet"/>
+      </target>
+      <derived>false</derived>
+    </metaModel.JAssociation>
+    <metaModel.JAssociation>
+      <name>RootToCer</name>
+      <owner class="metaModel.JUnidirectional">
+        <ownerType>
+          <name>Root</name>
+          <state class="metaModel.JClassLinkStateLocallyAssigned">
+            <target reference="../../../../../metaModel.JClass[3]"/>
+          </state>
+        </ownerType>
+      </owner>
+      <target class="metaModel.JConstrainedTargetConnector">
+        <role>container</role>
+        <targetType class="metaModel.JClassLink">
+          <name>Container</name>
+          <state class="metaModel.JClassLinkStateLocallyAssigned">
+            <target reference="../../../../../metaModel.JClass"/>
+          </state>
+        </targetType>
+        <constraint class="metaModel.enumerations.JTotalMap"/>
+      </target>
+      <derived>false</derived>
+    </metaModel.JAssociation>
+    <metaModel.JAssociation>
+      <name>DirToCer</name>
+      <owner class="metaModel.JUnidirectional">
+        <ownerType>
+          <name>Directory</name>
+          <state class="metaModel.JClassLinkStateLocallyAssigned">
+            <target reference="../../../../../metaModel.JClass[4]"/>
+          </state>
+        </ownerType>
+      </owner>
+      <target class="metaModel.JConstrainedTargetConnector">
+        <role>container</role>
+        <targetType class="metaModel.JClassLink">
+          <name>Container</name>
+          <state class="metaModel.JClassLinkStateLocallyAssigned">
+            <target reference="../../../../../metaModel.JClass"/>
+          </state>
+        </targetType>
+        <constraint class="metaModel.enumerations.JTotalMap" reference="../../../metaModel.JAssociation[2]/target/constraint"/>
+      </target>
+      <derived>false</derived>
+    </metaModel.JAssociation>
+  </relationTypes>
+  <generalisations class="set">
+    <metaModel.JGeneralisation>
+      <general>
+        <name>Containee</name>
+        <state class="metaModel.JClassLinkStateLocallyAssigned">
+          <target reference="../../../../../relationTypes/metaModel.JClass[2]"/>
+        </state>
+      </general>
+      <specific>
+        <name>File</name>
+        <state class="metaModel.JClassLinkStateLocallyAssigned">
+          <target reference="../../../../../relationTypes/metaModel.JClass[5]"/>
+        </state>
+      </specific>
+    </metaModel.JGeneralisation>
+    <metaModel.JGeneralisation>
+      <general>
+        <name>Containee</name>
+        <state class="metaModel.JClassLinkStateLocallyAssigned">
+          <target reference="../../../../../relationTypes/metaModel.JClass[2]"/>
+        </state>
+      </general>
+      <specific>
+        <name>Directory</name>
+        <state class="metaModel.JClassLinkStateLocallyAssigned">
+          <target reference="../../../../../relationTypes/metaModel.JClass[4]"/>
+        </state>
+      </specific>
+    </metaModel.JGeneralisation>
+  </generalisations>
+  <operations class="set"/>
+  <exceptions class="set"/>
+</JService>

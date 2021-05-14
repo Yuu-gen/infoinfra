@@ -1,11 +1,11 @@
-/**--- Generated at Fri May 07 15:53:48 CEST 2021 
+/**--- Generated at Fri May 14 10:30:26 CEST 2021 
  * --- No Change Allowed!  
  */
 package generated.stateMachineService.commands;
 import generated.stateMachineService.*;
 import commands.*;
 public class StateMachine_addTransition_Command extends ObjectCommand<StateMachine, Void>{
-   private static final long serialVersionUID = 837404060L;
+   private static final long serialVersionUID = -1027782512L;
    private State from;
    private State to;
    private Event event;

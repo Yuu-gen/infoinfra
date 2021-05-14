@@ -1,4 +1,4 @@
-/**--- Generated at Fri May 14 10:21:49 CEST 2021 
+/**--- Generated at Fri May 14 10:30:26 CEST 2021 
  * --- No Change Allowed!  
  */
 package generated.stateMachineService.proxies;
@@ -89,5 +89,17 @@ public class StateMachineProxy implements IStateMachine{
    }
    public void setName(String newName) throws PersistenceException{
       this.getTheObject().setName(newName);
+   }
+   public void changeStartState(State z0){
+      this.getTheObject().changeStartState(z0);
+   }
+   public void addState(String name, Boolean isFinal){
+      this.getTheObject().addState(name, isFinal);
+   }
+   public Boolean validate(String w){
+      return this.getTheObject().validate(w);
+   }
+   public void addTransition(State from, State to, Event event){
+      this.getTheObject().addTransition(from, to, event);
    }
 }

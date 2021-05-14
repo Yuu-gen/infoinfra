@@ -1,4 +1,4 @@
-/**--- Generated at Fri May 14 10:21:49 CEST 2021 
+/**--- Generated at Fri May 14 10:30:26 CEST 2021 
  * --- Mode = No Database 
  * --- Change only in Editable Sections!  
  * --- Do NOT touch section numbering!   
@@ -120,17 +120,10 @@ public class StateMachine extends Observable implements java.io.Serializable, IS
    }
    //80 ===== Editable : Your Operations =============
 /**
- * Validiert ob, das Wort w von diesem Automaten erkannt wird
+ * Aendert den Startzustand zu dem Zustand z0.
  */
-   public Boolean validate(String w){
-      // TODO: Implement Operation validate
-      return null;
-   }
-/**
- * Fuegt eine Transition mit Zustand "for", Zustand "to" und Event "event" hinzu.
- */
-   public void addTransition(State from, State to, Event event){
-      // TODO: Implement Operation addTransition
+   public void changeStartState(State z0){
+      // TODO: Implement Operation changeStartState
       return;
    }
 /**
@@ -141,10 +134,17 @@ public class StateMachine extends Observable implements java.io.Serializable, IS
       return;
    }
 /**
- * Aendert den Startzustand zu dem Zustand z0.
+ * Validiert ob, das Wort w von diesem Automaten erkannt wird. Test!
  */
-   public void changeStartState(State z0){
-      // TODO: Implement Operation changeStartState
+   public Boolean validate(String w){
+      // TODO: Implement Operation validate
+      return null;
+   }
+/**
+ * Fuegt eine Transition mit Zustand "for", Zustand "to" und Event "event" hinzu.
+ */
+   public void addTransition(State from, State to, Event event){
+      // TODO: Implement Operation addTransition
       return;
    }
 //90 ===== GENERATED: End of Your Operations ======

@@ -1,4 +1,4 @@
-/**--- Generated at Fri May 14 10:21:48 CEST 2021 
+/**--- Generated at Fri May 14 10:30:26 CEST 2021 
  * --- Mode = No Database 
  * --- Change only in Editable Sections!  
  * --- Do NOT touch section numbering!   
@@ -162,13 +162,6 @@ public class StateMachineService extends Observable{
       PersistenceExecuterFactory.getConfiguredFactory().getDBDDLExecuter().closeConnection();
    }
    //80 ===== Editable : Your Operations =============
-/**
- * Inititialisiert einen Automaten
- */
-   public StateMachine initialise(String startStateName){
-      // TODO: Implement Operation initialise
-      return null;
-   }
 /**
  * Inititialisiert einen Automaten
  */

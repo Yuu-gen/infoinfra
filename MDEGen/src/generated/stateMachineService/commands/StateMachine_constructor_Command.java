@@ -1,11 +1,11 @@
-/**--- Generated at Fri May 14 10:21:49 CEST 2021 
+/**--- Generated at Fri May 14 10:30:26 CEST 2021 
  * --- No Change Allowed!  
  */
 package generated.stateMachineService.commands;
 import generated.stateMachineService.*;
 import commands.*;
 public class StateMachine_constructor_Command extends ServiceCommand<StateMachine>{
-   private static final long serialVersionUID = -337728584L;
+   private static final long serialVersionUID = -522905555L;
    private State startState;
    private String  name;
    public StateMachine_constructor_Command(State startState, String  name){

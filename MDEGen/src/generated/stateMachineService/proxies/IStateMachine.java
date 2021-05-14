@@ -1,4 +1,4 @@
-/**--- Generated at Fri May 14 10:21:49 CEST 2021 
+/**--- Generated at Fri May 14 10:30:26 CEST 2021 
  * --- No Change Allowed!  
  */
 package generated.stateMachineService.proxies;
@@ -26,4 +26,8 @@ public interface IStateMachine extends Identifiable{
    public boolean removeFromEvents(Event arg) throws PersistenceException;
    public String getName() ;
    public void setName(String newName) throws PersistenceException;
+   public void changeStartState(State z0);
+   public void addState(String name, Boolean isFinal);
+   public Boolean validate(String w);
+   public void addTransition(State from, State to, Event event);
 }

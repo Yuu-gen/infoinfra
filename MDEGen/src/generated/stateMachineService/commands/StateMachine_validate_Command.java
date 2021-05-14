@@ -1,11 +1,11 @@
-/**--- Generated at Fri May 07 15:53:48 CEST 2021 
+/**--- Generated at Fri May 14 10:30:26 CEST 2021 
  * --- No Change Allowed!  
  */
 package generated.stateMachineService.commands;
 import generated.stateMachineService.*;
 import commands.*;
 public class StateMachine_validate_Command extends ObjectCommand<StateMachine, Boolean>{
-   private static final long serialVersionUID = 1940536248L;
+   private static final long serialVersionUID = 534637914L;
    private String w;
    public StateMachine_validate_Command(StateMachine receiver, String w){
       super(receiver);

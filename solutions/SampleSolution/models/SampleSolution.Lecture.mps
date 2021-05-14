@@ -308,7 +308,7 @@
       <node concept="3_Gd5r" id="73qKrKUOsUK" role="3_Gd4E">
         <property role="3_Gd5q" value="validate" />
         <property role="3_Gd5o" value="validate" />
-        <property role="3_Gd5t" value="Validiert ob, das Wort w von diesem Automaten erkannt wird" />
+        <property role="3_Gd5t" value="Validiert ob, das Wort w von diesem Automaten erkannt wird. Test!" />
         <node concept="3_Gf45" id="73qKrKUOsUM" role="3_Gf4o">
           <property role="TrG5h" value="w" />
           <node concept="BxOjD" id="73qKrKUOsUQ" role="BBx2O">

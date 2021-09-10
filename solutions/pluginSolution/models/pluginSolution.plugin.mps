@@ -57,6 +57,8 @@
     <import index="245y" ref="ec9a4d55-63ff-4cf2-ad33-52da8efb202a/java:metaModel.enumerations(external/)" />
     <import index="ov6m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui.messages(MPS.IDEA/)" />
     <import index="sefh" ref="ec9a4d55-63ff-4cf2-ad33-52da8efb202a/java:db.executer(external/)" />
+    <import index="zfbc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio(JDK/)" />
+    <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -1471,7 +1473,7 @@
           <node concept="2OqwBi" id="KnhnSDOxTq" role="3clFbG">
             <node concept="Xjq3P" id="KnhnSDOupT" role="2Oq$k0" />
             <node concept="liA8E" id="KnhnSDOzJb" role="2OqNvi">
-              <ref role="37wK5l" node="KnhnSDMKEV" resolve="deleteDirectory" />
+              <ref role="37wK5l" node="BrmwamuBtk" resolve="deleteCompleteDirectory" />
               <node concept="2YIFZM" id="3OvD8Kt39sp" role="37wK5m">
                 <ref role="37wK5l" to="h0cq:~DirectoryManager.determineTargetDirectory(java.lang.String,java.lang.String)" resolve="determineTargetDirectory" />
                 <ref role="1Pybhc" to="h0cq:~DirectoryManager" resolve="DirectoryManager" />
@@ -1512,10 +1514,10 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="KnhnSDL7yC" role="3cqZAp">
-          <node concept="2OqwBi" id="KnhnSDP2yc" role="3cqZAk">
-            <node concept="Xjq3P" id="KnhnSDOXoP" role="2Oq$k0" />
-            <node concept="liA8E" id="KnhnSDPhkx" role="2OqNvi">
+        <node concept="3cpWs6" id="Brmwam$Umc" role="3cqZAp">
+          <node concept="2OqwBi" id="Brmwam$YlY" role="3cqZAk">
+            <node concept="Xjq3P" id="Brmwam$Uux" role="2Oq$k0" />
+            <node concept="liA8E" id="Brmwam_3EE" role="2OqNvi">
               <ref role="37wK5l" node="63gs_Yuroib" resolve="executeService" />
             </node>
           </node>
@@ -6981,102 +6983,139 @@
         </node>
       </node>
     </node>
-    <node concept="3clFb_" id="KnhnSDMKEV" role="jymVt">
-      <property role="TrG5h" value="deleteDirectory" />
-      <node concept="3clFbS" id="KnhnSDMKEY" role="3clF47">
-        <node concept="3clFbJ" id="4h0T3AgDWcG" role="3cqZAp">
-          <node concept="3clFbS" id="4h0T3AgDWcI" role="3clFbx">
-            <node concept="3cpWs6" id="4h0T3AgE4EC" role="3cqZAp">
-              <node concept="3clFbT" id="4h0T3AgE4J4" role="3cqZAk" />
+    <node concept="3clFb_" id="BrmwamuBtk" role="jymVt">
+      <property role="TrG5h" value="deleteCompleteDirectory" />
+      <node concept="3clFbS" id="BrmwamuBtn" role="3clF47">
+        <node concept="3clFbJ" id="Brmwamy8pP" role="3cqZAp">
+          <node concept="3clFbS" id="Brmwamy8pR" role="3clFbx">
+            <node concept="3cpWs6" id="BrmwamyfbA" role="3cqZAp">
+              <node concept="3clFbT" id="BrmwamyffJ" role="3cqZAk" />
             </node>
           </node>
-          <node concept="3fqX7Q" id="4h0T3AgE3Dv" role="3clFbw">
-            <node concept="2OqwBi" id="4h0T3AgE3Dx" role="3fr31v">
-              <node concept="37vLTw" id="4h0T3AgE3Dy" role="2Oq$k0">
-                <ref role="3cqZAo" node="KnhnSDMQwK" resolve="d" />
+          <node concept="3fqX7Q" id="BrmwamydG6" role="3clFbw">
+            <node concept="2OqwBi" id="BrmwamydZr" role="3fr31v">
+              <node concept="37vLTw" id="BrmwamydKz" role="2Oq$k0">
+                <ref role="3cqZAo" node="BrmwamwTQ1" resolve="d" />
               </node>
-              <node concept="liA8E" id="4h0T3AgE3Dz" role="2OqNvi">
+              <node concept="liA8E" id="Brmwamyf2M" role="2OqNvi">
                 <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="KnhnSDMXy0" role="3cqZAp">
-          <node concept="3cpWsn" id="KnhnSDMXy1" role="3cpWs9">
+        <node concept="3cpWs8" id="Brmwamyq00" role="3cqZAp">
+          <node concept="3cpWsn" id="Brmwamyq01" role="3cpWs9">
             <property role="TrG5h" value="files" />
-            <node concept="10Q1$e" id="KnhnSDMXy2" role="1tU5fm">
-              <node concept="3uibUv" id="KnhnSDMXy3" role="10Q1$1">
+            <node concept="10Q1$e" id="Brmwamyq02" role="1tU5fm">
+              <node concept="3uibUv" id="Brmwamyq03" role="10Q1$1">
                 <ref role="3uigEE" to="guwi:~File" resolve="File" />
               </node>
             </node>
-            <node concept="2OqwBi" id="KnhnSDMYED" role="33vP2m">
-              <node concept="37vLTw" id="KnhnSDMYrM" role="2Oq$k0">
-                <ref role="3cqZAo" node="KnhnSDMQwK" resolve="d" />
+            <node concept="2OqwBi" id="Brmwamyvo5" role="33vP2m">
+              <node concept="37vLTw" id="BrmwamyvgG" role="2Oq$k0">
+                <ref role="3cqZAo" node="BrmwamwTQ1" resolve="d" />
               </node>
-              <node concept="liA8E" id="KnhnSDMZHT" role="2OqNvi">
+              <node concept="liA8E" id="Brmwamywep" role="2OqNvi">
                 <ref role="37wK5l" to="guwi:~File.listFiles()" resolve="listFiles" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="1Dw8fO" id="KnhnSDN$xi" role="3cqZAp">
-          <node concept="3clFbS" id="KnhnSDN$xk" role="2LFqv$">
-            <node concept="3clFbF" id="KnhnSDNG6D" role="3cqZAp">
-              <node concept="2OqwBi" id="KnhnSDNG_S" role="3clFbG">
-                <node concept="AH0OO" id="KnhnSDNGgG" role="2Oq$k0">
-                  <node concept="37vLTw" id="KnhnSDNGpK" role="AHEQo">
-                    <ref role="3cqZAo" node="KnhnSDN$xl" resolve="i" />
-                  </node>
-                  <node concept="37vLTw" id="KnhnSDNG6B" role="AHHXb">
-                    <ref role="3cqZAo" node="KnhnSDMXy1" resolve="files" />
+        <node concept="1Dw8fO" id="Brmwamy_Rz" role="3cqZAp">
+          <node concept="3clFbS" id="Brmwamy_R_" role="2LFqv$">
+            <node concept="3clFbJ" id="BrmwamyI6C" role="3cqZAp">
+              <node concept="3clFbS" id="BrmwamyI6E" role="3clFbx">
+                <node concept="3clFbF" id="BrmwamyOr8" role="3cqZAp">
+                  <node concept="2OqwBi" id="BrmwamyOzx" role="3clFbG">
+                    <node concept="Xjq3P" id="BrmwamyOr6" role="2Oq$k0" />
+                    <node concept="liA8E" id="BrmwamyOHy" role="2OqNvi">
+                      <ref role="37wK5l" node="BrmwamuBtk" resolve="deleteCompleteDirectory" />
+                      <node concept="AH0OO" id="BrmwamyTYu" role="37wK5m">
+                        <node concept="37vLTw" id="BrmwamyU8R" role="AHEQo">
+                          <ref role="3cqZAo" node="Brmwamy_RA" resolve="i" />
+                        </node>
+                        <node concept="37vLTw" id="BrmwamySYY" role="AHHXb">
+                          <ref role="3cqZAo" node="Brmwamyq01" resolve="files" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
-                <node concept="liA8E" id="KnhnSDNGSQ" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~File.delete()" resolve="delete" />
+              </node>
+              <node concept="2OqwBi" id="BrmwamyIio" role="3clFbw">
+                <node concept="AH0OO" id="BrmwamySC3" role="2Oq$k0">
+                  <node concept="37vLTw" id="BrmwamySIj" role="AHEQo">
+                    <ref role="3cqZAo" node="Brmwamy_RA" resolve="i" />
+                  </node>
+                  <node concept="37vLTw" id="BrmwamyRGp" role="AHHXb">
+                    <ref role="3cqZAo" node="Brmwamyq01" resolve="files" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="BrmwamyJ5$" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~File.isDirectory()" resolve="isDirectory" />
+                </node>
+              </node>
+              <node concept="9aQIb" id="BrmwamyQyz" role="9aQIa">
+                <node concept="3clFbS" id="BrmwamyQy$" role="9aQI4">
+                  <node concept="3clFbF" id="BrmwamyQF8" role="3cqZAp">
+                    <node concept="2OqwBi" id="BrmwamyQIR" role="3clFbG">
+                      <node concept="AH0OO" id="BrmwamyVlC" role="2Oq$k0">
+                        <node concept="37vLTw" id="BrmwamyVvq" role="AHEQo">
+                          <ref role="3cqZAo" node="Brmwamy_RA" resolve="i" />
+                        </node>
+                        <node concept="37vLTw" id="BrmwamyUms" role="AHHXb">
+                          <ref role="3cqZAo" node="Brmwamyq01" resolve="files" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="BrmwamyRyv" role="2OqNvi">
+                        <ref role="37wK5l" to="guwi:~File.delete()" resolve="delete" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3cpWsn" id="KnhnSDN$xl" role="1Duv9x">
+          <node concept="3cpWsn" id="Brmwamy_RA" role="1Duv9x">
             <property role="TrG5h" value="i" />
-            <node concept="10Oyi0" id="KnhnSDNDJW" role="1tU5fm" />
-            <node concept="3cmrfG" id="KnhnSDNDPQ" role="33vP2m">
+            <node concept="10Oyi0" id="BrmwamyFcJ" role="1tU5fm" />
+            <node concept="3cmrfG" id="BrmwamyFi8" role="33vP2m">
               <property role="3cmrfH" value="0" />
             </node>
           </node>
-          <node concept="3eOVzh" id="KnhnSDNEB8" role="1Dwp0S">
-            <node concept="2OqwBi" id="KnhnSDNF3S" role="3uHU7w">
-              <node concept="37vLTw" id="KnhnSDNEFA" role="2Oq$k0">
-                <ref role="3cqZAo" node="KnhnSDMXy1" resolve="files" />
+          <node concept="3eOVzh" id="BrmwamyG7U" role="1Dwp0S">
+            <node concept="2OqwBi" id="BrmwamyGHl" role="3uHU7w">
+              <node concept="37vLTw" id="BrmwamyGhg" role="2Oq$k0">
+                <ref role="3cqZAo" node="Brmwamyq01" resolve="files" />
               </node>
-              <node concept="1Rwk04" id="KnhnSDNFeC" role="2OqNvi" />
+              <node concept="1Rwk04" id="BrmwamyGS7" role="2OqNvi" />
             </node>
-            <node concept="37vLTw" id="KnhnSDNDU_" role="3uHU7B">
-              <ref role="3cqZAo" node="KnhnSDN$xl" resolve="i" />
+            <node concept="37vLTw" id="BrmwamyFmT" role="3uHU7B">
+              <ref role="3cqZAo" node="Brmwamy_RA" resolve="i" />
             </node>
           </node>
-          <node concept="3uNrnE" id="KnhnSDNFYe" role="1Dwrff">
-            <node concept="37vLTw" id="KnhnSDNFYg" role="2$L3a6">
-              <ref role="3cqZAo" node="KnhnSDN$xl" resolve="i" />
+          <node concept="3uNrnE" id="BrmwamyHK0" role="1Dwrff">
+            <node concept="37vLTw" id="BrmwamyHK2" role="2$L3a6">
+              <ref role="3cqZAo" node="Brmwamy_RA" resolve="i" />
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="KnhnSDNWEN" role="3cqZAp">
-          <node concept="2OqwBi" id="KnhnSDO5A4" role="3cqZAk">
-            <node concept="37vLTw" id="KnhnSDO1Mf" role="2Oq$k0">
-              <ref role="3cqZAo" node="KnhnSDMQwK" resolve="d" />
+        <node concept="3cpWs6" id="Brmwamv38O" role="3cqZAp">
+          <node concept="2OqwBi" id="BrmwamyZBa" role="3cqZAk">
+            <node concept="37vLTw" id="BrmwamyVGQ" role="2Oq$k0">
+              <ref role="3cqZAo" node="BrmwamwTQ1" resolve="d" />
             </node>
-            <node concept="liA8E" id="KnhnSDOaTh" role="2OqNvi">
+            <node concept="liA8E" id="Brmwamz4RJ" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~File.delete()" resolve="delete" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="3Tm6S6" id="KnhnSDME1y" role="1B3o_S" />
-      <node concept="10P_77" id="KnhnSDMJVf" role="3clF45" />
-      <node concept="37vLTG" id="KnhnSDMQwK" role="3clF46">
+      <node concept="3Tm6S6" id="BrmwamuvaP" role="1B3o_S" />
+      <node concept="10P_77" id="BrmwamuAGF" role="3clF45" />
+      <node concept="37vLTG" id="BrmwamwTQ1" role="3clF46">
         <property role="TrG5h" value="d" />
-        <node concept="3uibUv" id="KnhnSDMQwJ" role="1tU5fm">
+        <node concept="3uibUv" id="BrmwamxPx$" role="1tU5fm">
           <ref role="3uigEE" to="guwi:~File" resolve="File" />
         </node>
       </node>

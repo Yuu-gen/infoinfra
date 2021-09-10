@@ -119,7 +119,7 @@ public class ServiceGenerator {
   public JService reInitializeService() {
     File aSTFile = new File(this.xmlFilePath);
     aSTFile.delete();
-    this.deleteDirectory(DirectoryManager.determineTargetDirectory(javaIDEProjectDirectory, SPropertyOperations.getString(this.node, PROPS.name$tAp1)));
+    this.deleteCompleteDirectory(DirectoryManager.determineTargetDirectory(javaIDEProjectDirectory, SPropertyOperations.getString(this.node, PROPS.name$tAp1)));
     this.dropDatabase(SPropertyOperations.getString(this.node, PROPS.name$tAp1));
     return this.executeService();
   }
@@ -428,13 +428,17 @@ public class ServiceGenerator {
     DBConnectionData root = this.dbConnectionData;
     return new DBConnectionData(root.getUrl(), databaseName, root.getUser(), root.getPassword());
   }
-  private boolean deleteDirectory(File d) {
+  private boolean deleteCompleteDirectory(File d) {
     if (!(d.exists())) {
       return false;
     }
     File[] files = d.listFiles();
     for (int i = 0; i < files.length; i++) {
-      files[i].delete();
+      if (files[i].isDirectory()) {
+        this.deleteCompleteDirectory(files[i]);
+      } else {
+        files[i].delete();
+      }
     }
     return d.delete();
   }

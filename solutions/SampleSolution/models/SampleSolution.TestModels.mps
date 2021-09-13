@@ -38,6 +38,7 @@
         <property id="3845874433725116461" name="role" index="3_FBD6" />
       </concept>
       <concept id="3845874433725116455" name="MetaModel.structure.Association" flags="ng" index="3_FBDc">
+        <property id="6576532306767764476" name="derived" index="2_wlaP" />
         <child id="3845874433725125412" name="target" index="3_Fx_f" />
         <child id="3845874433725125405" name="owner" index="3_Fx_Q" />
       </concept>
@@ -526,7 +527,7 @@
         <ref role="3_FwNB" node="6aCnphQJ7yR" resolve="CC" />
       </node>
       <node concept="2zC27e" id="6aCnphQJ7$h" role="3_Fx_f">
-        <property role="2zC27X" value="1axOPyL0vap/TotalMap" />
+        <property role="2zC27X" value="1axOPyL0vao/PartialMap" />
         <property role="3_FBD6" value="theOptionalCB" />
         <ref role="3_FBDr" node="6aCnphQJ7yb" resolve="CB" />
       </node>
@@ -854,6 +855,10 @@
     <property role="TrG5h" value="ContainmentTest" />
     <node concept="3_Gd56" id="41p8GaCtDWJ" role="3_Gd4Z">
       <property role="TrG5h" value="Container" />
+      <node concept="2_wlaR" id="BrmwamsmfV" role="2_wlle">
+        <property role="3_FBD6" value="noOfContainees" />
+        <ref role="3_FBDr" node="5H4ykBYMXjV" resolve="Integer" />
+      </node>
     </node>
     <node concept="3_Gd56" id="41p8GaCtDWO" role="3_Gd4Z">
       <property role="TrG5h" value="Containee" />
@@ -871,6 +876,46 @@
         <property role="3_FBD6" value="containee" />
         <property role="2zC27X" value="1axOPyL0vao/PartialMap" />
         <ref role="3_FBDr" node="41p8GaCtDWO" resolve="Containee" />
+      </node>
+    </node>
+  </node>
+  <node concept="3_Gd4U" id="7dBsnGvXNpq">
+    <property role="TrG5h" value="DerivedTest" />
+    <node concept="3_Gd56" id="7dBsnGvXNpr" role="3_Gd4Z">
+      <property role="TrG5h" value="ADeri" />
+    </node>
+    <node concept="3_Gd56" id="7dBsnGvXNpw" role="3_Gd4Z">
+      <property role="TrG5h" value="ASubDeri" />
+    </node>
+    <node concept="3_F_VF" id="7dBsnGvXNpA" role="3_F_jM">
+      <ref role="3_F_VE" node="7dBsnGvXNpr" resolve="ADeri" />
+      <ref role="3_F_VC" node="7dBsnGvXNpw" resolve="ASubDeri" />
+    </node>
+    <node concept="3_Gd56" id="7dBsnGvXNpG" role="3_Gd4Z">
+      <property role="TrG5h" value="BDeri" />
+    </node>
+    <node concept="3_FBDc" id="7dBsnGvXNpS" role="3_Gd4Z">
+      <property role="TrG5h" value="AToB" />
+      <property role="2_wlaP" value="true" />
+      <node concept="3_FwNw" id="7dBsnGvXNq4" role="3_Fx_Q">
+        <ref role="3_FwNB" node="7dBsnGvXNpr" resolve="ADeri" />
+      </node>
+      <node concept="2zC27e" id="7dBsnGvXNq7" role="3_Fx_f">
+        <property role="3_FBD6" value="theB" />
+        <property role="2zC27X" value="5H4ykBYL_dN/List" />
+        <ref role="3_FBDr" node="7dBsnGvXNpG" resolve="BDeri" />
+      </node>
+    </node>
+    <node concept="3_FBDc" id="7dBsnGvXNqi" role="3_Gd4Z">
+      <property role="TrG5h" value="ASubToB" />
+      <property role="2_wlaP" value="true" />
+      <node concept="3_FwNw" id="7dBsnGvXNqx" role="3_Fx_Q">
+        <ref role="3_FwNB" node="7dBsnGvXNpw" resolve="ASubDeri" />
+      </node>
+      <node concept="2zC27e" id="7dBsnGvXNq$" role="3_Fx_f">
+        <property role="3_FBD6" value="theBFromSub" />
+        <property role="2zC27X" value="5H4ykBYL_dN/List" />
+        <ref role="3_FBDr" node="7dBsnGvXNpG" resolve="BDeri" />
       </node>
     </node>
   </node>

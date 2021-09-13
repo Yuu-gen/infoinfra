@@ -19,7 +19,6 @@
       </concept>
       <concept id="6576532306767764478" name="MetaModel.structure.AttributeConnector" flags="ng" index="2_wlaR" />
       <concept id="1967123554055742618" name="MetaModel.structure.TypeAdapter" flags="ng" index="BxOjD">
-        <property id="1967123554057163781" name="isMany" index="BFjhQ" />
         <reference id="1967123554055742621" name="type" index="BxOjI" />
       </concept>
       <concept id="3845874433725122187" name="MetaModel.structure.Unidirectional" flags="ng" index="3_FwNw">
@@ -36,6 +35,7 @@
         <property id="3845874433725116461" name="role" index="3_FBD6" />
       </concept>
       <concept id="3845874433725116455" name="MetaModel.structure.Association" flags="ng" index="3_FBDc">
+        <property id="6576532306767764476" name="derived" index="2_wlaP" />
         <child id="3845874433725125412" name="target" index="3_Fx_f" />
         <child id="3845874433725125405" name="owner" index="3_Fx_Q" />
       </concept>
@@ -494,29 +494,6 @@
     </node>
     <node concept="3_Gd56" id="5iYaeDUEYOw" role="3_Gd4Z">
       <property role="TrG5h" value="StateMachine" />
-      <node concept="3_Gd5r" id="6KWrYG_TzRH" role="3_Gd4E">
-        <property role="3_Gd5q" value="addTransition" />
-        <property role="3_Gd5o" value="addTransition" />
-        <property role="3_Gd5t" value="Fuegt eine Transition von &lt;from&gt; nach &lt;to&gt; mit Ereignis &lt;e&gt; hinzu" />
-        <node concept="3_Gf45" id="6KWrYG_TzRJ" role="3_Gf4o">
-          <property role="TrG5h" value="from" />
-          <node concept="BxOjD" id="6KWrYG_TzRN" role="BBx2O">
-            <ref role="BxOjI" node="6KWrYG_TzRx" resolve="State" />
-          </node>
-        </node>
-        <node concept="3_Gf45" id="6KWrYG_TzRQ" role="3_Gf4o">
-          <property role="TrG5h" value="to" />
-          <node concept="BxOjD" id="6KWrYG_TzS2" role="BBx2O">
-            <ref role="BxOjI" node="6KWrYG_TzRx" resolve="State" />
-          </node>
-        </node>
-        <node concept="3_Gf45" id="6KWrYG_TzS5" role="3_Gf4o">
-          <property role="TrG5h" value="ev" />
-          <node concept="BxOjD" id="6KWrYG_TzSd" role="BBx2O">
-            <ref role="BxOjI" node="5iYaeDUEYM5" resolve="Event" />
-          </node>
-        </node>
-      </node>
       <node concept="3_Gd5r" id="57R6S9Cq$F_" role="3_Gd4E">
         <property role="3_Gd5q" value="isDeterministic" />
         <property role="3_Gd5o" value="ist deterministisch?" />
@@ -565,6 +542,7 @@
     </node>
     <node concept="3_FBDc" id="5MOe6qqu08I" role="3_Gd4Z">
       <property role="TrG5h" value="SM_Events" />
+      <property role="2_wlaP" value="true" />
       <node concept="3_FwNw" id="5MOe6qqu09p" role="3_Fx_Q">
         <ref role="3_FwNB" node="5iYaeDUEYOw" resolve="StateMachine" />
       </node>
@@ -587,9 +565,8 @@
       </node>
       <node concept="3_Gf45" id="6KWrYG_TzZn" role="3_Gf4o">
         <property role="TrG5h" value="w" />
-        <node concept="BxOjD" id="6KWrYG_TzZt" role="BBx2O">
-          <property role="BFjhQ" value="true" />
-          <ref role="BxOjI" node="5iYaeDUEYM5" resolve="Event" />
+        <node concept="BxOjD" id="5Zb3k3ejKRm" role="BBx2O">
+          <ref role="BxOjI" node="5H4ykBYMXjQ" resolve="String" />
         </node>
       </node>
     </node>
